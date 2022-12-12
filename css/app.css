@@ -1,0 +1,579 @@
+body{
+    font-family: basic-sans, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* HEADER/NAVIGATION SECTION */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    padding: 2rem;
+    width: 100%;
+    background-color: white; 
+    box-shadow: 0 0 20px rgba(0,0,0,.4) ;
+}
+
+
+header a {
+    font-family: basic-sans, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #804A1D;
+    padding-left: 4rem;
+    font-size: 1rem;
+    text-align: right;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    
+}
+
+header a:hover {
+    color: black;
+}
+
+header img {
+    height: 5rem;
+}
+
+header .logo {
+    text-align: center;
+}
+
+@media screen and (min-width: 60em){
+    header .logo {
+        text-align: left;
+    }
+}
+
+header .button {
+    font-family: basic-sans, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    border-color: black;
+    background-color: white;
+    color: black;
+    margin: 0;
+}
+
+header .button:hover{
+        background-color: #804A1D;
+        color: white;
+}
+
+
+/* HERO SECTION */
+
+.hero{
+    height: 100vh;
+    background: url(../img/tomas-yates-hero.jpg)75% 75%;
+    background-size: cover;
+    display: grid;
+}
+
+.hero h1 {
+    color: white;
+    text-shadow: 0 0 3rem rgba(0,0,0,.4);
+    font-size: 4rem;
+   /*  line-height: 1.2; */
+    margin-top: 16rem; 
+    text-align: center;
+ 
+
+}
+
+
+
+
+/* BOOKING SECTION */
+
+ .booking {
+    
+padding: 3rem;
+
+
+
+}
+
+@media screen and (min-width: 60em){
+        .booking {
+    border-radius: .25rem;
+    position: absolute;
+    z-index: 3;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    align-content: center;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 2rem;
+    background-color: rgba(0,0,0,.5);
+    width: 80%;
+        }
+}
+
+.booking th {
+
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.booking thead {
+    background-color: transparent;
+    border: 0;
+    padding: 0 2rem;
+
+}
+
+.booking input {
+    font-size: 1.25rem;
+    padding: 2rem;
+    width: 100%;
+}
+
+.booking input [type="submit"] {
+    font-size: 1.25rem;
+    padding: 0;
+    width: 50%;
+    background-color: black;
+    color: white;
+
+}
+
+.booking input[type="text"] {
+    background-color: transparent;
+    margin: 0;
+}
+
+@media screen and (min-width: 60em){
+    .booking input[type="text"] {
+        color: white;
+    }
+    .booking input [type="submit"] {
+        background-color: transparent;
+    
+    }
+}
+
+.booking .submit {
+    width: 100%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.booking .button {
+    background-color:black;
+    color: white;
+    border-color: white;
+    font-size: 1.25rem;
+    padding: 1.5rem;
+
+}
+.booking th label {
+    font-size: 1.5rem;
+}
+
+
+
+.booking .button:hover {
+    background-color: white;
+    border-color: black;
+    background-color: transparent;
+    color: black;
+
+}
+
+.booking h2{
+} 
+@media screen and (min-width: 60em){
+
+    .booking .button:hover {
+        background-color: black;
+        color: white;
+    }
+    .booking h2{
+        color: white;
+    } 
+    .booking th label {
+        color: white;
+    }
+
+    .booking .button {
+        background-color:transparent;
+
+        
+    }
+    
+}
+
+/*REVEAL */
+
+.reveal{
+    padding: 3rem;
+    background: url(../img/ezra-jeffrey-comeau-confirmation.jpg); 
+    background-size: cover;
+    border: 0;
+    color: white;
+    
+
+}
+.reveal .fa-solid {
+    font-size: 2rem;
+    color: white;
+    margin: 2rem;
+}
+
+
+.reveal .overlay {
+    background-color: rgba(0,0,0,.5);
+    padding: 2rem;
+}
+
+.reveal .button {
+    background-color:transparent;
+    color: white;
+    border-color: white;
+    margin-left: 1rem;
+}
+.reveal .close-button:hover i{
+  color: #804A1D;
+}
+
+
+
+.reveal .dpd1,
+.reveal .dpd2 { 
+    font-size: 1.5rem;
+    text-shadow: 0 0 3rem rgba(0,0,0,.4);
+    font-family: basic-sans, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+
+
+}
+
+
+.reveal h1{
+    padding: 0;
+    text-align: center;
+}
+
+.reveal h2 {
+    padding-bottom: 1rem;
+
+}
+
+.reveal h3 {
+    padding-bottom: 1rem;
+
+}
+
+
+
+/* HEADERS */
+
+h1{
+    font-family: baskerville-urw, serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    font-size: 3rem;
+}
+
+h1 + p {
+    font-size: 1.5rem;
+}
+
+h2{
+    font-family: baskerville-urw, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+
+}
+
+h3 {
+    font-family: basic-sans, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+
+
+
+/* ROOMS SECTION */
+
+.rooms{
+    text-align: center;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    padding: 2rem;
+
+}
+
+.rooms img {
+    padding-top: 2rem;
+    margin-bottom: 1rem;
+
+}
+
+.rooms a.button {
+    font-family: basic-sans, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: black;
+    border-color: black;
+    background-color: white;
+    align-content: center;
+}
+.rooms a.button:hover {
+    background-color: black !important;
+    color: white !important;
+}
+
+.rooms h1 {
+    padding-bottom: 0;
+}
+
+
+/* ABOUT SECTION */
+
+.about{
+    color: white;
+    font-size: 1.2rem;
+    padding: 3rem;
+    background: tan url(../img/footprints.svg) no-repeat 1% 110%;
+    background-size: 60%;
+}
+
+/* middle version */
+@media screen and (min-width: 40em){
+
+    .about{
+        background-position: 70% 110%;
+        background-size: 40%;
+    }
+
+}
+/* wide version */
+
+@media screen and (min-width: 60em){
+
+    .about{
+        background-position: 20% 160%;
+        background-size: 40%;
+    }
+
+}
+
+
+.about img {
+    width: 75%;
+    padding-top: 3rem;
+    padding-bottom: 6rem;
+    padding-top: 0;
+    padding-left: 3rem;
+    
+  
+
+}
+.aboutheader img {
+    width: 55%;
+}
+
+.aboutheader {
+    width: 100% !important;
+    padding: 0 !important;
+    margin-bottom: 2rem !important;
+}
+@media screen and (min-width: 60em){
+    .aboutheader {
+        width: 55% !important;
+    }
+}
+
+
+/*REVIEWS SECTION */
+.reviews .orbit-slide {
+    color: white;
+    height: 10vh;
+    font-family: baskerville-urw, serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 2.5rem;
+}
+
+.reviews {
+    background-color: #212121;
+    padding: 5rem 0;
+    text-align: center;
+
+
+}
+
+
+
+/* CUSTOM SECTION */
+
+.custom{
+    text-align: center;
+    padding-top: 2rem;
+
+}
+
+.custom h1 {
+    padding: 12;
+}
+
+.custom .orbit {
+    padding: 1rem;
+    padding-top: 2rem;
+}
+.custom .orbit-caption {
+    font-size: 1.5rem;
+}
+
+/*SERVICES/IMAGE CAROUSEL SECTION */
+
+.carousel {
+    padding: 3rem;
+    text-align: center;
+
+}
+
+
+.carousel p {
+    padding-bottom: 2rem;
+}
+
+.carousel .orbit-previous .orbit-next {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: transparent;
+}
+
+.carousel img {
+    width: 100%;
+}
+
+.carousel h3 {
+    font-size: 1.5rem;
+    padding-top: 1rem;
+}
+
+/* FOOTER SECTION */
+
+footer {
+    background-color: #804A1D;
+    color: white;
+    font-size: 1rem;
+    padding: 2rem;
+}
+
+footer > grid-container {
+    border-bottom: 4px solid black;
+    padding-bottom: 2rem;
+
+
+}
+
+
+
+
+footer img {
+    align-content: left;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+    width: 150%;
+
+}
+
+footer .ul{
+    color: white;
+}
+footer .ul:hover{
+    background-color:white;
+}
+
+.menu a i {
+    color: white;
+    padding-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.ul .menu a i:hover i{
+    background-color: black;
+} 
+
+footer .button {
+    font-family: basic-sans, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    border-color: white;
+    background-color: transparent;
+    color: white;
+}
+
+footer .button:hover{
+    background-color: white;
+    color: black;
+} 
+
+footer .menu a{
+    font-size: 1.5rem;
+    padding: 0;
+    margin-right: 2rem;
+    color: white;
+    
+}
+
+footer .menu i{
+    padding-right: 1.5rem;
+}
+
+footer address {
+    font-family: basic-sans, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+
+}
+
+form label {
+    color: white;
+    font-size: 1.5rem;
+}
+
+form input [type="text"] {
+    padding: 4rem;
+    width: 100%;
+
+
+}
+
+footer p {
+    padding-top: 2rem 0;
+}
+
+address .fa-solid {
+    font-size: 2rem;
+
+}
+footer .copyright {
+    margin-top: 2rem;
+}
+form .button {
+margin-top: 1rem;
+}
+

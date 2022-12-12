@@ -1,0 +1,408 @@
+<!doctype html>
+
+<html class="no-js" lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ember Lodge</title>
+  <link rel="stylesheet" href="css/foundation.css">
+  <link rel="stylesheet" href="css/foundation-datepicker.min.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="https://use.typekit.net/twa7nkg.css">
+  <script src="https://kit.fontawesome.com/a22a57cfc7.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+
+
+
+<body>
+  ` <header>
+    <div class="grid-container">
+      <div class="grid-x align-middle" data-magellan>
+        <div class="logo cell large-2">
+          <img src="img/emberlodgelogo.svg" alt="Ember Lodge Logo">
+        </div>
+        <div class="show-for-large cell large-offset-2 large-2 text-right">
+          <a href ="#rooms">Rooms</a>
+          </div>
+          <div class="show-for-large cell large-2 text-right">
+            <a href ="#services">Services</a>
+          </div>
+          <div class="show-for-large cell large-2 text-right">
+            <a href ="#about">Our Story</a>
+          </div>
+          <div class="show-for-large cell large-2 text-right">
+            <a class ="button" href="#">BOOKING</a>
+          </div>
+
+        </div>
+      </div>
+  </header>
+
+  <section class="hero">
+    <h1>Welcome to <br>
+      Ember Lodge <br>
+      Resort & Hotel</h1>
+  </section>
+
+  <section class="booking">
+    <table class="table">
+      <thead>
+        <tr class="grid-x grid-margin-x grid-margin-y">
+          <th class="cell medium-4">
+            <label for="dpd1">ARRIVAL</label>
+            <input type="text" class="span2" value="" id="dpd1">
+          </th>
+          <th class="cell medium-4">
+            <label for="dpd2">DEPARTURE</label>
+            <input type="text" class="span2" value="" id="dpd2">
+          </th>
+          <th class="cell medium-4">
+            <label class="invisible" for="submit-button">Submit</label>
+            <input type="submit" class="submit button radius small" value="CONTINUE" data-open="confirmation-overlay" aria-controls="confirmation-overlay" aria-haspopup="true" tabindex="0">
+          </th>
+        </tr>
+      </thead>
+    </table>
+  </section>
+
+
+  <!--
+    - datepicker widget (be careful when editing)
+    - displays two fields in two columns
+    - place this inside one of your page sections
+    -->
+
+
+
+  <!--
+    - overlay window with spans used to show data from datepicker
+    - edit the grid however you would like to fit your layout, but
+    - do not delete the <span class="dpd1"></span> and <span class="dpd2"></span> tags, these are used to show the user the dates they selected
+    - this section can go anywhere in your code, but to keep things organized, place it after the section where you have your date picker form
+    -->
+
+  <div id="confirmation-overlay" class="reveal large" data-reveal>
+    <div class="grid-x">
+      <div class="cell large-7">
+        <div class="overlay">
+          <h1>Congratulations!</h1>
+          <p>YOU HAVE SUCCESSFULLY BOOKED YOUR ROOM.</p> 
+          <span class="dpd1">ARRIVAL<a class="button" href="#">JAN 27 <br> 2023</a>
+          </span> <br>
+          <span class="dpd2">DEPARTURE <a class="button" href="#">FEB 3 <br> 2023</a></span>
+          <p>YOU HAVE BEEN ASSIGNED THE FOLLOWING ROOM:</p>
+          <h2>EMBER ROOM</h2>
+        </div>
+      </div>
+    </div>
+    <button class="close-button" data-close aria-label="Close modal" type="button"><i class="fa-solid fa-x"></i></button>
+  </div>
+
+
+  <section id="rooms" class="rooms" data-magellan-target="rooms">
+    <div class="grid-container">
+      <div class="cell">
+        <h1>Our Rooms</h1>
+        <p>Get an insight on the rooms that we offer and what is included.</p>
+      </div>
+    </div>
+    <div class="grid-x grid-margin-x grid-margin-y">
+      <div class="cell medium-offset-1 medium-5 text-center">
+        <img src="img/visualsofdana-ember room.jpg" alt="Visuals of Dana">
+        <h2>Ember Room</h2>
+        <p>A classic room fit for 1-2 guests, including an en suite bathroom, free wifi, and free
+          toiletries exclusively from Ember Lodge.</p>
+      </div>
+      <div class="cell medium-5 text-center">
+        <img src="img/michel-stockman-glowing room.jpg" alt="Michel Stockman">
+        <h2>Glowing Room</h2>
+        <p>A larger room fit for 2-4 guests, including an en suite bathroom, a kitchen, limited sitting area, free wifi,
+          and toiletries
+          exclusively from Ember Lodge.</p>
+      </div>
+          <div class="cell medium-12 text-center">
+          <a class="button" href="#">VIEW MORE ROOMS</a>
+        </div>
+    </div>
+  </section>
+
+
+
+  <section id="about" class="about" data-magellan-target="about">
+    <div class="grid-container">
+      <div class="grid-x grid-margin-x">
+        <div class="cell large-10">
+          <img src="img/aboutheader.svg" class ="aboutheader" alt="About Our Location">
+        </div>
+      </div>
+        <div class="grid-x grid-margin-x">
+          <div class="cell medium-6 align-left">
+            <p data-aos="fade-right">We are located in the midst of the New Hampshire mountains, right in the center of wildlife. Our location
+              allows for many different amenities such as skiing, hiking, sledding, and more. The wildlife located
+              around our property is perfect for photography, and relaxing hikes to embrace the natural beauty that
+              nature has to offer!<br> 
+              Our mission is to be a place where anyone can feel at home. Whether someone likes to ski, or simply likes to spend quality time 
+              with friends, that is why our location is so important. Here at Ember Lodge we don't want anyone to feel left out, and make sure that anyone can find something enjoye
+              from our variety of services, specifically unique to our location.
+            </p>
+          </div>
+          <div class="cell medium-6 align-right">
+            <img data-aos="fade-left" src="img/clay-banks-about.jpg" alt="Clay Banks">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="custom">
+    <div class="grid-container">
+      <div class="grid-x grid-margin-x">
+        <div class="cell">
+    <h1>Come and Relax</h1>
+    <p>Get a sense of our great communal rooms to wind down and gather with friends.</p>
+    <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out; timerDelay: 6000">
+      <div class="orbit-wrapper">
+        <div class="orbit-controls">
+          <button class="orbit-previous"><span class="show-for-sr">
+          <button class="orbit-next"><span class="show-for-sr">
+        </div>
+        <ul class="orbit-container">
+          <li class="is-active orbit-slide">
+            <figure class="orbit-figure">
+              <img class="orbit-image" src="img/justin-kauffman-orbit1.jpg" alt="Justin Kauffman">
+              <figcaption class="orbit-caption">Casual “outdoorsy” like sitting areas to make you feel at home.
+              </figcaption>
+            </figure>
+          </li>
+          <li class="orbit-slide">
+            <figure class="orbit-figure">
+              <img class="orbit-image" src="img/trevor-mckinnon-orbit2.jpg" alt="Trevor Mckinnon">
+              <figcaption class="orbit-caption">Sitting rooms to watch the view of the ski mountain and sunset.
+              </figcaption>
+            </figure>
+          </li>
+          <li class="orbit-slide">
+            <figure class="orbit-figure">
+              <img class="orbit-image" src="img/yente-van-eynde-orbit3.jpg" alt="Yente Van Eynde">
+              <figcaption class="orbit-caption">Rooms can be enjoyed in all seasons - not just winter!</figcaption>
+            </figure>
+          </li>
+        </ul>
+      </div>
+    </div>
+   </div>
+ </div>
+      <nav class="orbit-bullets">
+        <button class="is-active" data-slide="0">
+          <span class="show-for-sr">First slide details.</span>
+          <span class="show-for-sr" data-slide-active-label>Current Slide</span>
+        </button>
+        <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+        <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+      </nav>
+    </div>
+  </section>
+
+
+  <section class="reviews">
+    <div class="grid-container">
+      <div class="grid-x grid-margin-x">
+        <div class="cell">
+    <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out; timerDelay: 6000">
+      <div class="orbit-wrapper">
+        <ul class="orbit-container">
+          <li class="is-active orbit-slide">   
+              <p>"Great resort & hotel."</p>
+     
+          </li>
+          <li class="orbit-slide">
+            
+              <p>"Amazing Hot Chocolate!"</p>
+            
+          </li>
+          <li class="orbit-slide">
+              <p>"Perfect get-away location."</p>
+          
+          </li>
+        </ul>
+      </div>
+      </div>
+      </div>
+      </div>
+  </section>
+
+  <section id="services" class="carousel" data-magellan-target="services">
+    <div class="grid-container">
+      <div class="grid-x">
+        <div class="cell">
+          <h1>Guest Services</h1>
+          <p>Get a feel for the different services and activities exclusively offered to our guests.</p>
+          <div class="orbit" role="region" aria-label="Favorite Space Pictures"data-orbit>
+            <div class="orbit-wrapper">
+              <ul class="orbit-container">
+                <li class="is-active orbit-slide">
+                  <div class="grid-x grid-margin-x grid-margin-y align-center">
+                    <div class="cell medium-3 text-center">
+                      <img src="img/clifford-ember-cafe.jpg" alt="Clifford">
+                      <h3>Ember Cafe</h3>
+                    </div>
+                    <div class="cell medium-3 text-center">
+                      <img src="img/micheile-dot-com-toiletries.jpg" alt="Micheile dot-com">
+                      <h3>Toiletries</h3>
+                    </div>
+                    <div class="cell medium-3 text-center">
+                      <img src="img/peter-kalonji-hotchocolate.jpg" alt="Peter Kalonji">
+                      <h3>Hot Chocolate</h3>
+                    </div>
+                    <div class="cell medium-3 text-center">
+                      <img src="img/helena-lopes-buffet.jpg" alt="Helena Lopes">
+                      <h3>Buffet</h3>
+                    </div>
+                  </div>
+                </li>
+                <li class="orbit-slide">
+                  <div class="grid-x grid-margin-x grid-margin-y align-center">
+                    <div class="cell medium-3 text-center">
+                      <img src="img/rizky-subagja-breakfast.jpg" alt="Rizky Subagja">
+                      <h3>Breakfast</h3>
+                    </div>
+                    <div class="cell medium-3 text-center">
+                      <img src="img/aaron-wilson-explore.jpg" alt="Aaron Wilson">
+                      <h3>Explore</h3>
+                    </div>
+                      <div class="cell medium-3 text-center">
+                        <img src="img/giorgi-iremadze-apparelh.jpg" alt="Giorgi Iremdze">
+                        <h3>Apparel</h3>
+                      </div>
+                      <div class="cell medium-3 text-center">
+                        <img src="img/al-elmes-activites.jpg" alt="Al Elmes">
+                        <h3>The Outdoors</h3>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- <section class="services">
+    <div class="grid-container">
+      <div class="cell">
+        <h1>Guest Services</h1>
+        <p>Get a feel for the different services and activities exclusively offered to our guests.</p>
+        <div class="grid-x grid-margin-x grid-margin-y align-center">
+          <div class="cell medium-2 text-center">
+            <i class="fa-solid fa-arrow-left"></i>
+            <img src="img/clifford-ember-cafe.jpg" alt="Clifford">
+            <h3>Ember Cafe</h3>
+          </div>
+          <div class="cell medium-2 text-center">
+            <img src="img/micheile-dot-com-toiletries.jpg" alt="Micheile dot-com">
+            <h3>Toiletries</h3>
+          </div>
+          <div class="cell medium-2 text-center">
+            <img src="img/peter-kalonji-hotchocolate.jpg" alt="Peter Kalonji">
+            <h3>Hot Chocolate</h3>
+          </div>
+          <div class="cell medium-2 text-center">
+            <img src="img/rizky-subagja-breakfast.jpg" alt="Rizky Subagja">
+            <h3> Breakfast</h3>
+          </div>
+          <div class="cell medium-2 text-center">
+            <img src="img/al-elmes-activites.jpg" alt="Al Elmes">
+            <i class="fa-solid fa-arrow-right"></i>
+            <h3>The Outdoors</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <footer>
+    <div class="grid-container">
+      <div class="grid-x grid-margin-x">
+        <div class="cell medium-4">
+          <img src="img/footerheader.svg" alt="More Information About Us">
+        </div>
+      </div>
+      <div class="grid-x grid-margin-x grid-margin-y">
+        <div class="cell medium-4">
+          <h3>Social Media</h3>
+          <ul class="menu vertical">
+            <li><a href="#"><i class="fa-brands fa-square-facebook"></i>emberlodgefb</a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i>emberlodge</a></li>
+            <li><a href="#"><i class="fa-brands fa-square-twitter"></i>emberlodge</a></li>
+          </ul>
+          <a class="button" href="#">NEWSLETTER</a>
+        </div>
+        <div class="cell medium-4">
+          <address>
+           <h3>Find Us</h3>
+            <p>
+              Ember Lodge Resort & Hotel<br>
+              724 White Mountain Street<br>
+              Jackson, New Hampshire 03846<br>
+              United States<br>
+              +1(603)-867-5302
+            </p>
+          </address>
+          <a class="button" href="#">ABOUT</a>
+        </div>
+        <div class="cell medium-4">
+          <form>
+            <h3> Contact Us </h3> 
+                  <label>Name
+                    <input type="text" placeholder="Johnny Appleseed">
+                  </label>
+                
+                  <label>Email
+                    <input type="text" placeholder="johnnyappleseed@outlook.com">
+                  </label>
+                
+                  <label>Message
+                    <input type="text" placeholder="Type your message here">
+                  </label>
+                
+                  <label for="exampleFileUpload" class="button">SUBMIT</label>
+                  <input type="file" id="exampleFileUpload" class="show-for-sr">
+          </form>
+        </div>
+      </div>
+      <div class="grid-x grid-margin-x">
+        <div class="cell medium-4">
+
+          <p class ="copyright"> © 2022 Ember Lodge All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--
+
+    - do not delete anything below this line
+    - do not place any code below this line
+
+    -->
+
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/vendor/what-input.js"></script>
+  <script src="js/vendor/foundation.js"></script>
+  <script src="js/vendor/foundation-datepicker.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+
+</html>
